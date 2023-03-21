@@ -102,6 +102,21 @@ async function run() {
         res.send({ success: false, message: "No User Exist" });
       }
     });
+
+    //admin
+    //login
+    app.get("/login/admin", async (req, res) => {
+      const adminEmail = "admin@admin.com";
+      const adminPassword = abcd1234;
+      if (
+        adminEmail === req.body.email &&
+        adminPassword === req.body.password
+      ) {
+        res.send({ success: true, message: "Admin Login Successfull" });
+      } else {
+        res.send({ success: false, message: "Login Failed, Please Try Again" });
+      }
+    });
   } finally {
   }
 }
