@@ -107,7 +107,7 @@ async function run() {
     //login
     app.get("/login/admin", async (req, res) => {
       const adminEmail = "admin@admin.com";
-      const adminPassword = abcd1234;
+      const adminPassword = "abcd1234";
       if (
         adminEmail === req.body.email &&
         adminPassword === req.body.password
@@ -116,6 +116,12 @@ async function run() {
       } else {
         res.send({ success: false, message: "Login Failed, Please Try Again" });
       }
+    });
+
+    app.get("/admin/all-user", async (req, res) => {
+      const riders = await ridersCollection.find({}).toArray();
+      const learners = await learnerCollection.find({}).toArray();
+      res.send({ riders, learners });
     });
   } finally {
   }
