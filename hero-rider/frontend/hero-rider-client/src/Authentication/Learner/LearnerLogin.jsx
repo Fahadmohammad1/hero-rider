@@ -3,7 +3,7 @@ import React from "react";
 const LearnerLogin = () => {
   return (
     <div>
-      <h1>this is learner login</h1>
+      <h1 style={{ color: "red" }}>this is learner login</h1>
     </div>
   );
 };

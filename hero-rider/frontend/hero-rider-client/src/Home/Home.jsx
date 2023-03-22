@@ -5,21 +5,23 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className="container">
-      <div className="banner-info">
-        <h1>Grow as a Rider or Learn Driving with us</h1>
+    <section>
+      <div className="container">
+        <div className="banner-info">
+          <h1>Grow as a Rider or Learn Driving with us</h1>
 
-        <div className="banner-btn">
-          <button>
-            <Link to="/rider-login">Join as a Rider</Link>
-          </button>
-          <button>
-            <Link to="/learner-login">Join as a Driving Lesson Learner</Link>
-          </button>
+          <div className="banner-btn">
+            <button>
+              <Link to="/rider-login">Join as a Rider</Link>
+            </button>
+            <button>
+              <Link to="/learner-login">Join as a Driving Lesson Learner</Link>
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="banner-pic-div">
-        <img className="banner-pic" src={banner} alt="banner" />
+        <div className="banner-pic-div">
+          <img className="banner-pic" src={banner} alt="banner" />
+        </div>
       </div>
     </section>
   );
