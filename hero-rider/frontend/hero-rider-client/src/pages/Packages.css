@@ -1,12 +1,39 @@
 .package-div {
   display: flex;
+  gap: 40px;
   width: 100%;
+  align-items: center;
   margin: auto;
+  min-height: 100vh;
 }
 
 .car {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-bottom: 20px;
 }
 .bike {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.car-payment {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.bike-payment {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
 }
